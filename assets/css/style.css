@@ -1,0 +1,44 @@
+/* global css start  */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+body {
+  font-family: "Lexend", serif;
+}
+/* Button css start  */
+.btn {
+  color: #111;
+  font-family: "Lexend";
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 8px;
+  transition: all ease-in-out 0.3s;
+  text-align: center;
+}
+
+.btn-green,
+.btn-gray:hover,
+.btn-gray.active {
+  background: #b4f461;
+}
+
+.btn-gray,
+.btn-green:hover,
+.btn-green.active {
+  background-color: #1111110d;
+}
+.tk-btn {
+  padding: 10px 16px;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(17, 17, 17, 0.05);
+  font-family: "Lexend";
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111b2;
+}
+.bdr {
+  border-radius: 16px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+}
+/* Button css end  */
+/* global css end  */
