@@ -10,10 +10,12 @@ donateBtn("noakhali-donate-btn").addEventListener("click", () => {
     warnMsg.classList.remove("hidden");
   } else {
     warnMsg.classList.add("hidden");
+    document.getElementById("noakhali-fund").innerText =
+      currentFund + inputValue;
+    document.getElementById("ca-balance").innerText =
+      currentBalance - inputValue;
+    document.getElementById("modal").classList.remove("hidden");
   }
-  document.getElementById("noakhali-fund").innerText = currentFund + inputValue;
-  document.getElementById("ca-balance").innerText = currentBalance - inputValue;
-  document.getElementById("modal").classList.remove("hidden");
 });
 
 document.getElementById("close-btn").addEventListener("click", () => {
