@@ -22,6 +22,7 @@
               title: "#111111",
               "body-text": "#111111B2",
               "gray-40": "#11111166",
+              warn: "#dc3545",
             },
           },
           container: {
@@ -56,13 +57,15 @@
           <p
             class="flex items-center gap-3 text-xl font-semibold text-body-text order-2 md:order-3 duration-300"
           >
-            <img src="./assets/img/dollar.svg" alt="" /><span>10500</span>BDT
+            <img src="./assets/img/dollar.svg" alt="" /><span id="ca-balance"
+              >10500</span
+            >BDT
           </p>
         </nav>
       </div>
       <div class="container flex justify-center mt-10 md:mt-[80px] pb-8 gap-6">
-        <button class="btn btn-green">Donation</button>
-        <button class="btn btn-gray">History</button>
+        <button id="donation-btn" class="btn btn-green">Donation</button>
+        <button id="history-btn" class="btn btn-gray">History</button>
       </div>
     </header>
     <div class="w-full mt-8">
@@ -71,12 +74,165 @@
         <div class="container">
           <div class="grid grid-cols-1 gap-8">
             <!-- Donation single item start  -->
-            <div></div>
+            <div class="flex flex-col md:flex-row gap-8 p-8 bdr">
+              <div class="w-full md:w-1/2 rounded-xl overflow-hidden">
+                <img class="img-ctr" src="./assets/img/img-1.jpg" alt="" />
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="flex flex-col gap-5">
+                  <div>
+                    <button class="tk-btn inline-flex gap-2 cursor-default">
+                      <img src="./assets/img/dollar.svg" alt="" />
+                      <span id="noakhali-fund">0</span>BDT
+                    </button>
+                  </div>
+                  <div>
+                    <h1
+                      id="noakhali-title"
+                      class="text-xl text-title font-bold mb-5"
+                    >
+                      Donate for Flood at Noakhali, Bangladesh
+                    </h1>
+                    <p>
+                      The recent floods in Noakhali have caused significant
+                      damage to homes infrastructure. Your donation will help
+                      provide essential supplies and to those affected by this
+                      disaster. Every contribution, big or small, makes
+                      difference. Please join us in supporting the relief
+                      efforts and making a positive impact on the lives of those
+                      in need.
+                    </p>
+                  </div>
+                  <div class="flex flex-col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                      id="noakhali-donation"
+                    />
+                    <p id="noakhali-warn" class="text-warn hidden">
+                      Please input valid amount
+                    </p>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-green w-full"
+                      id="noakhali-donate-btn"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Donation single item end  -->
+            <!-- Donation single item start  -->
+            <div class="flex flex-col md:flex-row gap-8 p-8 bdr">
+              <div class="w-full md:w-1/2 rounded-xl overflow-hidden">
+                <img class="img-ctr" src="./assets/img/img-2.jpg" alt="" />
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="flex flex-col gap-5">
+                  <div>
+                    <button class="tk-btn inline-flex gap-2 cursor-default">
+                      <img src="./assets/img/dollar.svg" alt="" />
+                      <span class="feni-fund">0</span>BDT
+                    </button>
+                  </div>
+                  <div>
+                    <h1
+                      id="noakhali-title"
+                      class="text-xl text-title font-bold mb-5"
+                    >
+                      Donate for Flood Relief in Feni,Bangladesh
+                    </h1>
+                    <p>
+                      The recent floods in Noakhali have caused significant
+                      damage to homes infrastructure. Your donation will help
+                      provide essential supplies and to those affected by this
+                      disaster. Every contribution, big or small, makes
+                      difference. Please join us in supporting the relief
+                      efforts and making a positive impact on the lives of those
+                      in need.
+                    </p>
+                  </div>
+                  <div class="flex flex-col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                      id="noakhali-donation"
+                    />
+                    <p aria-colspan="feni-warn" class="text-warn hidden">
+                      Please input valid amount
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn btn-green w-full" id="feni-donate-btn">
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Donation single item end  -->
+            <!-- Donation single item start  -->
+            <div class="flex flex-col md:flex-row gap-8 p-8 bdr">
+              <div class="w-full md:w-1/2 rounded-xl overflow-hidden">
+                <img class="img-ctr" src="./assets/img/img-3.jpg" alt="" />
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="flex flex-col gap-5">
+                  <div>
+                    <button class="tk-btn inline-flex gap-2 cursor-default">
+                      <img src="./assets/img/dollar.svg" alt="" />
+                      <span class="quota-fund">0</span>BDT
+                    </button>
+                  </div>
+                  <div>
+                    <h1
+                      id="noakhali-title"
+                      class="text-xl text-title font-bold mb-5"
+                    >
+                      Aid for Injured in the Quota Movement
+                    </h1>
+                    <p>
+                      The recent floods in Noakhali have caused significant
+                      damage to homes infrastructure. Your donation will help
+                      provide essential supplies and to those affected by this
+                      disaster. Every contribution, big or small, makes
+                      difference. Please join us in supporting the relief
+                      efforts and making a positive impact on the lives of those
+                      in need.
+                    </p>
+                  </div>
+                  <div class="flex flex-col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                      id="noakhali-donation"
+                    />
+                    <p id="quota-warn" class="text-warn hidden">
+                      Please input valid amount
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn btn-green w-full" id="quota-donate-btn">
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Donation single item end  -->
           </div>
         </div>
       </div>
       <!-- Donation section end  -->
     </div>
+    <footer class="w-full bg-bg-color h-[146px] mt-10 md:mt-[80px]"></footer>
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/donation.js"></script>
   </body>
 </html>
