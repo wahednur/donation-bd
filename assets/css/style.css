@@ -24,7 +24,7 @@ body {
 .btn-gray,
 .btn-green:hover,
 .btn-green.active {
-  background-color: #1111110d;
+  background-color: #d1d1d1;
 }
 .tk-btn {
   padding: 10px 16px;
@@ -40,5 +40,27 @@ body {
   border-radius: 16px;
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
+header::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #111111b2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /* Button css end  */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  padding: 18px;
+  outline: none;
+}
+.img-ctr {
+  aspect-ratio: 522/389;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
 /* global css end  */

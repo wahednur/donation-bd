@@ -20,13 +20,63 @@
               "bg-color": "#F9F7F3",
               "gray-btn": "#1111110D",
               title: "#111111",
-              "body-text": "#111111",
+              "body-text": "#111111B2",
               "gray-40": "#11111166",
+            },
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "12px",
+              lg: "0px",
             },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <header class="sticky top-0 backdrop-blur-[6px] relative bg-white/30">
+      <div class="bg-bg-color/50 backdrop-blur-[6px] py-6 w-full">
+        <nav
+          class="flex flex-col md:flex-row justify-between container items-center gap-6 duration-300"
+        >
+          <a class="btn btn-green order-3 md:order-1" href="#">Blog</a>
+
+          <a
+            href="#"
+            class="flex gap-2 items-center order-1 md:order-2 duration-300"
+          >
+            <img src="./assets/img/logo.svg" alt="" />
+            <span class="text-title text-xl font-semibold"
+              >Donate Bangladesh</span
+            >
+          </a>
+
+          <p
+            class="flex items-center gap-3 text-xl font-semibold text-body-text order-2 md:order-3 duration-300"
+          >
+            <img src="./assets/img/dollar.svg" alt="" /><span>10500</span>BDT
+          </p>
+        </nav>
+      </div>
+      <div class="container flex justify-center mt-10 md:mt-[80px] pb-8 gap-6">
+        <button class="btn btn-green">Donation</button>
+        <button class="btn btn-gray">History</button>
+      </div>
+    </header>
+    <div class="w-full mt-8">
+      <!-- Donation section start  -->
+      <div class="donation">
+        <div class="container">
+          <div class="grid grid-cols-1 gap-8">
+            <!-- Donation single item start  -->
+            <div></div>
+            <!-- Donation single item end  -->
+          </div>
+        </div>
+      </div>
+      <!-- Donation section end  -->
+    </div>
+  </body>
 </html>
