@@ -64,3 +64,10 @@ header::after {
   height: 100%;
 }
 /* global css end  */
+.modal {
+  transition: all ease-in-out 0.6s;
+  opacity: 1;
+}
+.modal.hidden {
+  opacity: 0;
+}

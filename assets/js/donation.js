@@ -13,6 +13,9 @@ donateBtn("noakhali-donate-btn").addEventListener("click", () => {
   }
   document.getElementById("noakhali-fund").innerText = currentFund + inputValue;
   document.getElementById("ca-balance").innerText = currentBalance - inputValue;
+  document.getElementById("modal").classList.remove("hidden");
+});
 
-  console.log(inputValue, currentFund);
+document.getElementById("close-btn").addEventListener("click", () => {
+  document.getElementById("modal").classList.add("hidden");
 });
