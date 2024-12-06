@@ -40,7 +40,7 @@ body {
   border-radius: 16px;
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
-header::after {
+.header::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -70,4 +70,28 @@ header::after {
 }
 .modal.hidden {
   opacity: 0;
+}
+.numb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 900;
+  background-color: #b4f461;
+  padding: 10px;
+  border-radius: 10px;
+  color: #111;
+}
+.code-container {
+  position: relative;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.code-container code {
+  font-family: "Courier New", Courier, monospace;
+  color: #333;
 }
